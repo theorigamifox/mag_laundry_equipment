@@ -1,0 +1,1 @@
+<?php/** * Template Name: Mag Parts */get_header();?><?php while (have_posts()) : the_post(); ?>    <div id="primary" class="about">        <div class="row">            <div id="content" class="large-12 columns">                <?php the_content(); ?>            </div>        </div>    </div><?php endwhile; ?><?php get_footer(); ?>

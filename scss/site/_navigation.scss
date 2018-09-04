@@ -1,0 +1,165 @@
+.site-navigation {
+    position: relative;
+    z-index: 1000;
+    background:$navgrey;
+    padding:0;
+    ul.nav-menu {
+        display:inline-block;
+        width:100%;
+        text-align:left;
+        margin:0;
+        padding:0;
+        li {
+            display: inline-block;
+            color: $white;
+            list-style: none;
+            position: relative;
+            font-family: $primaryfont;
+            font-weight:bold;
+            transition: all 0.5s ease-in-out 0s;
+            text-align:center;
+            text-transform: uppercase;
+            &.current-menu-item {
+                a {
+                    color:$primarycolor;
+                }
+            }
+            &.active {
+                > a {
+                    font-family:$primaryfont;
+                    color:$navgrey;
+                }
+            }
+            a {
+                margin: auto;
+                color:$white;
+                font-size:90%;
+                transition: all 0.5s ease-in-out 0s;
+                display: block;
+                line-height: 14px;
+                padding: $primary-spacing 15px;
+                letter-spacing: 1px;
+                &:first-of-type{
+                    padding-left:0;
+                }
+                &:hover {
+                    color:$primarycolor;
+                    text-decoration:none;
+                }
+                @media #{$medium-down} {
+                    font-size:80%;
+                    padding:25px 5px;
+                }
+                @media only screen and (max-width: 840px) and (min-width: 767px) {
+                    padding:25px 2px;
+                }
+            }
+            i {
+                position: absolute;
+                bottom: 43%;
+                font-size: 9px;
+            }
+            ul{
+                li{
+                    float:none;
+                    display:block;
+                    &.active {
+                        a {
+                            color:$primarycolor;
+                        }
+                    }
+                    a{
+                        line-height:24px;
+                        padding:5px 0;
+                        &:hover{
+                            color:$primarycolor !important;
+                            background:none;
+                        }
+                    }
+                }
+                li.active > a {
+                    color:$primarycolor;
+                    background:none;
+                }
+            }
+        }
+    }
+}
+.nav-menu {
+    > li > ul > li > a {
+        display:block;
+        color:$white;
+        padding:0;
+        text-transform: uppercase;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    > li > ul > li > a:hover {
+        transition: all 0.5s ease-in-out 0s;
+    }
+    > li > ul {
+        opacity: 0;
+        visibility: hidden;
+        padding: 20px;
+        text-align: center;  /* This is for the text when box is dropped down, centered isnt always totally in the middle so best to have on the left */
+        position: absolute;
+        z-index:1000;		/* This is for the drop down annimation */
+        left: 50%;
+        top: 75px;
+        margin-left: -100px;
+        width: 200px;
+        transition: all .3s .1s;
+        overflow:visible;
+        color: $white;
+        background:$navgrey;
+        &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            width: 180px;
+            height: 0px;
+        }
+    }
+    > li:hover > ul {
+        opacity: 1;
+        top: 75px;				/* This is how far from the top the drop down annimation will go  */
+        visibility: visible;
+        @media #{$medium-down} {
+            top:62px;
+        }
+    }
+}
+@media #{$medium-only} {
+    .site-navigation {
+        ul {
+            li {
+                a {
+                    padding:17px 5px;
+                    font-size:80%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 767px){
+    header#header {
+        #primary-navigation {
+            .mobile-menu {
+                display:none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    header#header {
+        position:relative;
+        #primary-navigation {
+            .mobile-menu {
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                width:100%;
+            }
+        }
+    }
+}

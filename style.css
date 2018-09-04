@@ -1,0 +1,45 @@
+/*
+Theme Name: Mag Laundry Equipment
+Theme URI: http://grizzlybeardesign.co.uk/
+Author: Grizzly Bear Design
+Author URI: http://grizzlybeardesign.co.uk/
+Description: A beautiful site completely integrated to Mag Laundry Equipment.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, one-column, right-sidebar, fixed-width, custom-background, custom-header, theme-options, full-width-template, featured-images, flexible-header, custom-menu, translation-ready
+
+*/
+#masthead #register-modal{
+font-size:18px;
+}
+#masthead #register-modal:before{
+    border-top: 48px solid transparent;
+    border-bottom: 48px solid #fb8800;
+    top: -48px;
+}
+.site-header h2.site-description {
+font: 19px/28px "Montserrat",sans-serif!important;
+}
+.page-template-contact #header-intro{
+margin-bottom:0!important;
+}
+@media screen and (max-width: 1024px) {
+button#responsive-menu-button {
+background:#212121!important;
+}
+#responsive-menu-container #responsive-menu li.responsive-menu-item .responsive-menu-item-link {
+text-transform:uppercase;
+}
+}
+@media (max-width: 600px) {
+    .site-header .site-details #contact-box span{
+        padding-left:0;
+    }
+.site-header .site-details #contact-box a:link{
+line-height:normal;
+}
+}
+@media only screen and (min-width: 40.0625em){
+
+}

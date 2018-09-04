@@ -1,0 +1,1 @@
+/** * Functionality specific to Jobify * * Provides helper functions to enhance the theme experience. */var Jobify = {}

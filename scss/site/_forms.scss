@@ -1,0 +1,295 @@
+::-webkit-input-placeholder { /* WebKit browsers */
+    opacity: 1 !important;
+}
+::-moz-placeholder { /* Firefox browsers */
+    opacity: 1;
+} 
+:-ms-input-placeholder {
+    opacity: 1;
+}
+input:-moz-placeholder {
+    opacity: 1;
+}
+/* Form fields, general styles first. */
+
+label {
+    font-family:$primaryfont;
+    font-size:14px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+button,
+input,
+textarea {
+    font: 400 17px $secondaryfont;
+    padding: 11px 15px;
+    border: 0;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    font-size: 16px;
+    padding: 10px 14px;
+    background: $white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0;
+}
+/* Buttons */
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {}button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {}
+
+.button:hover,
+a.button-secondary,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus,
+#wp-submit:hover,
+#submitcomment:hover,
+#searchsubmit:hover,
+input[type="submit"]:hover {
+    border-color: $primarycolor;
+    background:$white;
+}
+label {
+    text-align: left;
+    display:inline-block;
+}
+form {
+    margin: 0;
+}
+//fieldset {
+//    border: 1px solid #c0c0c0;
+//    margin: 0 2px;
+//    padding: 0.35em 0.625em 0.75em;
+//}
+form{
+    fieldset:first-child{
+        float: left;
+        margin-right: 4%;
+        width: 48%;
+        ul{
+            li{
+                padding-right:0!important;
+            }
+        }
+    }
+    fieldset:nth-child(2){
+        clear: none;
+        float: right;
+        margin-right: 0;
+        width: 46%;
+        ul{
+            margin-left:0!important;
+            li{
+                padding-right:0!important;
+            }
+        }
+    }
+}
+fieldset{
+    border:0!important;
+}
+.gform_wrapper textarea.medium{
+    height:106px!important;
+}
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+}
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+button,
+input {
+    line-height: normal;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+    cursor: default;
+    opacity: 0.8;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    padding-right: 2px;
+    /* Don't cut off the webkit search cancel button */
+}
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100% !important;
+}
+.contact-form textarea {
+    height: 195px;
+}
+.two_third.last_column div {
+    width: 95%;
+    float: right;
+}
+.contact-submit {
+    margin-top: 20px;
+}
+.gform_fields {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.gfield {
+    margin: 0 0 20px;
+}
+.ginput_container {
+    margin: 0 0 8px;
+}
+.gfield_description {
+    font-size: 80%;
+    float: left;
+}
+.gfield_description.validation_message {
+    color: #df7c7b;
+    float: right;
+}
+.modal .gform_wrapper .validation_error {
+    margin: 0 0 30px;
+}
+
+.entry-content #loginform,
+.entry-content #register-form,
+.entry-content .rcp_form {
+    margin: 0 auto;
+    width: 50%;
+}
+.rcp_header {
+    display: none;
+}
+.modal-login .login-remember {
+    display: none;
+}
+
+
+/* BROWSERS */
+.gform_wrapper.gf_browser_chrome {
+    .gfield_checkbox, .gfield_radio {
+        li {
+            input, input[type=checkbox], input[type=radio] {
+                margin-top:0;
+            }
+        }
+    }
+}
+.gform_wrapper {
+    margin-bottom:50px!important;
+    li.gfield {
+        margin-bottom:25px;
+    }
+    input[type="text"], input[type="email"], input[type="search"], input[type="password"], input[type="number"], textarea, select, input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+        border-radius: 0;
+        padding:15px!important;
+    }
+    .top_label {
+        label, .gfield_label {
+            display:none;
+        }
+        .gfield_checkbox {
+            label {
+                display:inline-block;
+                color:$textgrey;
+            }
+        }
+    }
+    .gform_footer {
+        margin-top:0!important;
+        padding-top:0!important;
+    }
+}
+@media screen and (max-width: 62.5em) {
+    .wpcf7-form {
+        input[type="email"], input[type="text"], input[type="button"], textarea {
+            font-size:85%;
+        }
+    }
+}
+@media screen and (max-width: 40em) {
+    .wpcf7-form {
+        input[type="email"], input[type="text"], input[type="button"], textarea {
+            font-size:80%;
+        }
+        input.wpcf7-submit{
+            float:none;
+            width:100%;
+            text-align:center;
+        }
+    }
+    .gform_wrapper {
+        .gform_footer {
+            margin-top:0;
+            padding-top:0;
+        }
+    }
+}

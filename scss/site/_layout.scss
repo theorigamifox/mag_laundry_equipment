@@ -1,0 +1,24 @@
+body{
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+}
+.row, #restrict-width{
+    max-width:82rem;
+}
+#restrict-width {
+    margin:0 auto!important;
+}
+a{
+	color: $white;
+	text-decoration: none;
+	@include transition(all, .2s, ease); 
+}
+.img-container:hover{
+	@include transition(all, .2s, ease);
+	.view-post{
+		opacity: 1;
+	}
+}
+
+
+@import 'footer';

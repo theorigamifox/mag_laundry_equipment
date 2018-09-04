@@ -1,0 +1,62 @@
+.page-template-template-contact {
+    #primary {
+        padding-bottom:0;
+        .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+            margin-bottom:0!important;
+        }
+    .gform_wrapper {
+        margin-bottom:50px!important;
+        .field_sublabel_below .ginput_complex.ginput_container label {
+            display:none;
+        }
+        .top_label {
+            .gfield_checkbox {
+                label {
+                    color:$white;
+                }
+            }
+        }
+    }
+    .contact-icons {
+        list-style:none;
+        color:$white;
+        padding:0;
+        li {
+            list-style:none;
+            margin-bottom:25px;
+        }
+        .info-container {
+            .icon {
+                float: left;
+                color: #c7c7c7;
+                display: block;
+                width: 2.5em;
+                text-align: center;
+                &:before {
+                    font-size:40px;
+                    color:$primarycolor;
+                }
+            }
+            .info-text {
+                padding-left: 5.9em;
+                .info-title {
+                    text-transform: uppercase;
+                    font-size: 1.25em;
+                    display: block;
+                    line-height: 1.5em;
+                    font-family: $secondaryfont;
+                }
+                .info-description {
+                    margin-top: 1em;
+                    p {
+                        color:$white;
+                        margin-bottom:5px;
+                        font-size:14px;
+                        line-height:18px;
+                    }
+                }
+            }
+        }
+    }
+    }
+}

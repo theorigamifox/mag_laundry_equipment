@@ -1,0 +1,83 @@
+
+.modal {
+    display: none;
+}
+.mfp-content .modal {
+    display: block;
+}
+.application_details,
+.modal {
+    position: relative;
+    background: $white;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.modal {
+    padding: 0;
+    background: #fafafa;
+}
+.modal-title {
+    font-weight: normal;
+    padding: 30px;
+    background: $white;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 0;
+    color:$navgrey;
+}
+.modal #loginform,
+.modal #register-form,
+.application-content,
+.modal .rcp_form {
+    padding: 15px 30px;
+}
+.modal #loginform .login-submit,
+.modal #register-form .register-submit,
+.modal .rcp_form #rcp_submit_wrap,
+.modal .rcp_login_data p:last-child,
+.modal .gform_footer {
+    margin: 0 -30px;
+    padding: 15px 30px;
+    background: $white;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+.modal .job-manager-form fieldset {
+    margin-bottom: 24px;
+}
+.application_details p:last-of-type {
+    margin-bottom: 0;
+}
+button.mfp-close {
+    color: $white !important;
+    top: 30px;
+    right: 30px;
+    line-height: 31px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+button.mfp-close:active {
+    top: 30px;
+}
+
+#register-modal-wrap form {
+    margin: 0 30px;
+}
+.images #register-modal {
+    font-size: 20px;
+    background: $green;
+    color: $white;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.images #register-modal a {
+    color: $white;
+    text-align: center;
+    display: block;
+}

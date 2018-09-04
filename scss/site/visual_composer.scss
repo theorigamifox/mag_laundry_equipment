@@ -1,0 +1,29 @@
+body .vc_custom_1532435202078 {
+    img {
+        max-width:50%;
+    }
+}
+
+@media #{$medium-down} {
+
+}
+@media #{$small-down} {
+    body .nopadding {
+        padding:0!important;
+    }
+    body .nomargin {
+        margin:0!important;
+    }
+    .vc_column_container>.vc_column-inner.vc_custom_1532433649325 {
+        padding:0!important;
+        margin:0!important;
+    }
+    .vc_row-fluid.vc_custom_1532430215488 {
+        padding-bottom:0!important;
+    }
+    body .vc_custom_1532435202078 {
+        img {
+            max-width:100%;
+        }
+    }
+}

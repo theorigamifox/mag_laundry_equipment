@@ -1,0 +1,13 @@
+.single-testimonial {
+    #primary {
+        background:$white;
+        p {
+            color:$textgrey;
+        }
+        .blog-archive {
+            .hentry {
+                border-bottom:0 none;
+            }
+        }
+    }
+}

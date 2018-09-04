@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('../fonts/UniversLTStd-Light.woff2') format('woff2'),
+        url('../fonts/UniversLTStd-Light.woff') format('woff'),
+        url('../fonts/UniversLTStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'core_mellow55_medium';
+    src: url('../fonts/core_mellow_55_medium-webfont.eot');
+    src: url('../fonts/core_mellow_55_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_mellow_55_medium-webfont.woff2') format('woff2'),
+         url('../fonts/core_mellow_55_medium-webfont.woff') format('woff'),
+         url('../fonts/core_mellow_55_medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'core_mellow55_medium', Arial, sans-serif!important;
+}
+h3 {
+    font-size:24px;
+}
+p {
+    font-family: 'Univers LT Std', Arial, sans-serif!important;
+}
+header#header {
+    padding:25px 25px 0;
+}
+.header-align-left #logo {
+    float:left;
+    padding:0!important;
+}
+.header-align-left.fullwidth-menu-header .menu-wrapper {
+    padding:50px 50px 0;
+}
+.header-align-left.fullwidth-menu-header .is-sticky .menu-wrapper {
+    padding:0 50px;
+}
+#main-menu, #main-menu ul.menu {
+    float:right!important;
+}
+.standard-header .main-header-wrapper {
+    position: absolute;
+}
+.home #header-wrapper {
+    margin:0!important;
+    position:absolute!important;
+}
+.fullwidth-menu-header .menu-wrapper {
+    border-top:0!important;
+}
+.main-header-wrapper {
+    background:none!important;
+}
+#main-menu ul.menu > li > a {
+    color:#FFF!important;
+}
+.is-sticky #main-menu ul.menu > li > a {
+    color:#444!important;
+}
+.green-bg p, .green-bg p a {
+    color:#FFFFFF;
+    font-family: 'core_mellow55_medium', Arial, sans-serif!important;
+    font-size:24px;
+    line-height:30px;
+    margin-bottom:0;
+}
+.footer-copyright, .footer-copyright a {
+    color:#222;
+    font-family: 'Univers LT Std', Arial, sans-serif!important;
+}

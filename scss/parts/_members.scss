@@ -1,0 +1,65 @@
+#primary {
+    h1 {
+        color:$white;
+        text-align:center;
+    }
+    .um {
+        .um-field-label {
+            color:$white;
+        }
+        input[type="submit"].um-button {
+            background:$primarycolor;
+            border:2px solid $primarycolor!important;
+            &:hover {
+                border:2px solid $primarycolor!important;
+                background:$secondarycolor;
+                color:$white;
+            }
+        }
+    }
+
+    .um-profile.um {
+        .um-name {
+            color:$white;
+            a {
+                color:$white;
+            }
+        }
+    }
+    .um-account-main {
+        div.um-account-heading {
+            color:$white;
+        }
+    }
+    .um-account-side {
+        .um-account-name {
+            a {
+                color:$white;
+            }
+        }
+    }
+        .um-field-checkbox-option, .um-field-radio-option,.um-field-checkbox-state i, .um-field-radio-state i {
+        color:$white!important;
+        cursor:pointer;
+        @include transition(0.5s, all, ease-in-out);
+        &:hover {
+            color:$primarycolor!important;
+        }
+    }
+}
+.um-page-login, .um-page-register {
+    #primary {
+        .entry-content {
+            max-width:450px;
+            margin:0 auto;
+            color:$white;
+        }
+    }
+}
+.um-page-register {
+    #primary {
+        .entry-content {
+            text-align:center;
+        }
+    }
+}

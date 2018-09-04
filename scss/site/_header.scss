@@ -1,0 +1,97 @@
+.site-header {
+    position: relative;
+    z-index: 3;
+    padding:0;
+    background:$headergrey;
+    padding: 75px 0 35px;
+    .home-wrap {
+        .site-title {
+            position: relative;
+            font-family: $primaryfont;
+            font-size:36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 0 15px;
+            padding: 0;
+            width: auto;  
+            max-width:240px;
+            span {
+                position: absolute;
+                clip: rect(1px, 1px, 1px, 1px);
+            }
+        }
+        h2.site-description {
+            font-size: 14px;
+            padding: 0;
+            margin:0;
+            clear: none;
+            text-transform: none;
+            font-family: $primaryfont;
+            font-size:20px;
+            line-height: 24px;
+            letter-spacing:0.5px;
+            font-weight: 300;
+            span {
+                font-weight:700;
+                color:$orange;
+            }
+        }
+    }
+}
+
+
+#masthead {
+    position:relative;
+    border-bottom:5px solid $primarycolor;
+    background-size: cover;
+    background-position: 0 0;
+        @media #{$large-up} {
+    min-height: 700px;
+    }
+    @media #{$medium-only} {
+    min-height: 400px;
+    }
+    #mag-group-logo {
+        position:absolute;
+        bottom:75px;
+        right:75px;
+        @media #{$medium-only} {
+            width:150px;
+            bottom:50px;
+            right:50px;
+        }
+    }
+    .banner-text {
+        position:absolute;
+        top:50%;
+        left:0;
+        right:0;
+        transform:translateY(-50%);
+        padding:0 45px;
+        h1, .header-main-text {
+            margin-bottom:25px;
+            font-size:50px;
+            font-family:$primaryfont;
+            color:$white;
+            text-shadow:0px 0px 10px #222;
+            line-height:60px;
+            span {
+                color:$primarycolor;
+            }
+            @media #{$medium-only} {
+                font-size:30px;
+                line-height:30px;
+                margin-bottom:10px;
+            }
+        }
+        .header-sub-text {
+            color:$white;
+            font-family:$primaryfont;
+            font-size:20px;
+            text-shadow:0px 0px 10px #222;
+            @media #{$medium-only} {
+                font-size:18px;
+            }
+        }
+    }
+}
