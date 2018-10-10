@@ -1,0 +1,112 @@
+.page-template-template-landing {
+    .row {
+        max-width:1200px;
+        .large-12 {
+            background:$secondarycolor;
+            #landing-header {
+                min-height:600px;
+            }
+        }
+    }
+    #primary {
+        blockquote {
+            p {
+                font-size:20px;
+            }
+        }
+    }
+    .wpb_content_element {
+        margin-bottom:0;   
+    }
+    .gform_wrapper {
+        margin-bottom:0!important;
+        form {
+            fieldset:nth-child(2n+1) {
+                width:50%;
+            }
+        }
+        h3.gform_title {
+            font-size:180%;
+            font-weight: normal;
+        }
+        label {
+            color:$white!important;
+        }
+        .gfield {
+            margin-bottom:10px;
+            margin-top:0;
+            input[type="text"], input[type="email"], textarea {
+                border-radius:3px!important;
+            }
+            .gfield_description {
+                display:none;
+            }
+        }
+        .top_label {
+            .gfield_checkbox label {
+                color:$white;
+            }
+        }
+        .ginput_complex {
+            .ginput_left, .ginput_right {
+                width:100%;
+                padding:0!important;
+                margin:0!important;
+                label {
+                    display:none!important;
+                }
+            }
+        }
+    }
+    #landing-content {
+        background:$secondarycolor;
+
+        p {
+            color:$secondarycolor;
+            a {
+                color:$secondarycolor;
+                font-weight:bold;
+            }
+        }
+    }
+    .bluebdr {
+        border-top:10px solid $primarycolor;
+    }
+    #footer-main {
+        padding:25px;
+        background:none;
+        h3 {
+            color:$secondarycolor;
+        }
+        p {
+            margin:0;
+        }
+        a {
+            img {
+                max-width:75%;
+            }
+        }
+        h4 {
+            display:none;
+        }
+        .footer-sign-up {
+            margin-top:11px;
+        }
+        .footer-social {
+            ul {
+                margin-top:23px;
+            }
+        }
+    }
+    @media #{$small-down} { 
+        #primary {
+            padding:0;
+        }
+        #landing-header {
+            background-image:none!important;
+        }
+        #footer-main {
+            padding:50px;
+        }
+    }
+}

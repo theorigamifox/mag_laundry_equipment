@@ -1,0 +1,1 @@
+<?php/** * Template Name: Mag Quotation */?><?php get_header(); ?><?php while (have_posts()) : the_post(); ?><!--    <div id="primary">        <div class="row">            <div class="large-12 columns">                <?php the_content(); ?>            </div>        </div>    </div> #content --><?php endwhile;rewind_posts();?><?php get_footer(); ?>

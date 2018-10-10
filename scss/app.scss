@@ -65,11 +65,13 @@ This can decrease the css file size drastically, and should be done before produ
 @import 'site/products';
 @import 'site/testimonials';
 @import 'site/contact';
+@import 'site/landing';
 @import 'site/forms';
 @import 'site/visual_composer';
 @import 'site/responsive';
 
 @import 'plugins/slick';
+@import 'parts/magnific';
 @import 'plugins/prettyPhoto';
 @import 'parts/members';
 @import 'parts/social';

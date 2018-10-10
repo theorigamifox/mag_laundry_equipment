@@ -101,17 +101,17 @@ form {
 //    padding: 0.35em 0.625em 0.75em;
 //}
 form{
-    fieldset:first-child{
+    fieldset:nth-child(2n+1){
         float: left;
         margin-right: 4%;
-        width: 48%;
+        width: 46%;
         ul{
             li{
                 padding-right:0!important;
             }
         }
     }
-    fieldset:nth-child(2){
+    fieldset:nth-child(2n+2){
         clear: none;
         float: right;
         margin-right: 0;
@@ -231,6 +231,11 @@ input::-moz-focus-inner {
 .modal-login .login-remember {
     display: none;
 }
+.show-label {
+    label {
+        display:block;
+    }
+}
 
 
 /* BROWSERS */
@@ -245,8 +250,14 @@ input::-moz-focus-inner {
 }
 .gform_wrapper {
     margin-bottom:50px!important;
+    h2.gsection_title {color:$primarycolor;}
     li.gfield {
         margin-bottom:25px;
+        &.show-label {
+            label {
+                display:inline-block;
+            }
+        }
     }
     input[type="text"], input[type="email"], input[type="search"], input[type="password"], input[type="number"], textarea, select, input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
         border-radius: 0;

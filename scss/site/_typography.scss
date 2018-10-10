@@ -178,6 +178,18 @@ a{
         p {
             font-size:24px;
             line-height:30px;
+            @media #{$small-down} {
+                font-size:16px;
+                line-height:26px;
+            }
+        }
+    }
+}
+.white-bg {
+    h1, h2,h3,h4,h5,h6, p {
+        color:$secondarycolor!important;
+        a {
+            color:$secondarycolor!important;
         }
     }
 }

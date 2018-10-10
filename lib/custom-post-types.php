@@ -109,22 +109,23 @@ function product_brands() {
 
 add_action('init', 'product_brands', 0);
 
-function product_range() {
+function product_sectors() {
+
     $labels = array(
-        'name' => _x('Product Range', 'Taxonomy General Name'),
-        'singular_name' => _x('Product Range', 'Taxonomy Singular Name'),
-        'menu_name' => __('Product Range'),
-        'all_items' => __('All Product Ranges'),
-        'parent_item' => __('Parent Product Range'),
-        'parent_item_colon' => __('Parent Product Range:'),
-        'new_item_name' => __('New Product Range'),
-        'add_new_item' => __('Add New Product Range'),
-        'edit_item' => __('Edit Product Range'),
-        'update_item' => __('Update Product Range'),
-        'separate_items_with_commas' => __('Separate Product Range with commas'),
-        'search_items' => __('Search Product Range'),
-        'add_or_remove_items' => __('Add or remove Product Range'),
-        'choose_from_most_used' => __('Choose from the most used Product Range'),
+        'name' => _x('Sectors', 'Taxonomy General Name'),
+        'singular_name' => _x('Sector', 'Taxonomy Singular Name'),
+        'menu_name' => __('Sectors'),
+        'all_items' => __('All Sectors'),
+        'parent_item' => __('Parent Sector'),
+        'parent_item_colon' => __('Parent Sector:'),
+        'new_item_name' => __('New Sector Name'),
+        'add_new_item' => __('Add New Sector'),
+        'edit_item' => __('Edit Sector'),
+        'update_item' => __('Update Sector'),
+        'separate_items_with_commas' => __('Separate Sectors with commas'),
+        'search_items' => __('Search Sectors'),
+        'add_or_remove_items' => __('Add or remove Sectors'),
+        'choose_from_most_used' => __('Choose from the most used Sectors'),
     );
     $args = array(
         'labels' => $labels,
@@ -134,13 +135,13 @@ function product_range() {
         'show_admin_column' => true,
         'show_in_nav_menus' => true,
         'show_tagcloud' => false,
-        'has_archive' => true
+        'has_archive' => true,
+        'rewrite' => true
     );
-        register_taxonomy('product-range', 'product', $args);
-
+    register_taxonomy('product-sectors', 'product', $args);
 }
 
-add_action('init', 'product_range', 0);
+add_action('init', 'product_sectors', 0);
 
 function product_type() {
     $labels = array(

@@ -85,6 +85,11 @@
     }
 }
 @media only screen and (max-width: 40.063em) {
+    #quick-contact {
+        #quick-quote-img {
+            display:none;
+        }
+    }
     .hide-mobile {display:none!important;}
     /* FOOTER */
     .footer-widgets .page-list ul li{

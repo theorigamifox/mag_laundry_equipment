@@ -8,6 +8,12 @@ body .vc_custom_1532435202078 {
 
 }
 @media #{$small-down} {
+    body.home {
+        #primary {
+            padding:0!important;
+        }
+    }
+
     body .nopadding {
         padding:0!important;
     }
@@ -24,6 +30,16 @@ body .vc_custom_1532435202078 {
     body .vc_custom_1532435202078 {
         img {
             max-width:100%;
+        }
+    }
+    body {
+        .vc_custom_1533677818624, .vc_custom_1537279660457 {
+            padding:0!important;
+        }
+        .vc_custom_1537279660457 {
+            .vc_row.vc_row-o-content-top>.vc_column_container>.vc_column-inner {
+                padding-top:0;
+            }
         }
     }
 }

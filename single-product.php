@@ -24,7 +24,7 @@ get_header();
                     endif;
                     ?>
                     <div class="product-cta">
-                        Call us on <a href="tel:08000 288 525">08000 288 525</a><br> or fill in the <a href="#productform">form below</a>
+                        Call us on <a href="tel:08000 288 525">08000 288 525</a><br> or fill in the <a href="#productform" title="<?php the_title();?> Enquiry">form below</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ get_header();
                 <div class="large-5 columns right">
                     <div class="product-image-wrapper">
                         <div class="product-image">
-                            <a href="<?php the_post_thumbnail_url('full'); ?>" rel="prettyPhoto[pp_gal]">
+                            <a href="<?php the_post_thumbnail_url('full'); ?>" rel="prettyPhoto[pp_gal]" title="<?php the_title();?>">
                                 <?php the_post_thumbnail('full'); ?>
                             </a>
                         </div>
@@ -62,7 +62,7 @@ get_header();
                                         if ($image1):
                                             ?>
                                             <li>
-                                                <a href="<?php echo $image1['url']; ?>" rel="prettyPhoto[pp_gal]">
+                                                <a href="<?php echo $image1['url']; ?>" rel="prettyPhoto[pp_gal]" title="<?php the_title();?>">
                                                     <img src="<?php echo $image1['sizes']['thumbnail']; ?>" alt="<?php echo $image1['alt']; ?>">
                                                 </a>
                                             </li>
@@ -71,7 +71,7 @@ get_header();
                                         if ($image2):
                                             ?>
                                             <li>
-                                                <a href="<?php echo $image2['url']; ?>" rel="prettyPhoto[pp_gal]">
+                                                <a href="<?php echo $image2['url']; ?>" rel="prettyPhoto[pp_gal]" title="<?php the_title();?>">
                                                     <img src="<?php echo $image2['sizes']['thumbnail']; ?>" alt="<?php echo $image2['alt']; ?>">
                                                 </a>
                                             </li>
@@ -80,7 +80,7 @@ get_header();
                                         if ($image3):
                                             ?>
                                             <li>
-                                                <a href="<?php echo $image3['url']; ?>" rel="prettyPhoto[pp_gal]">
+                                                <a href="<?php echo $image3['url']; ?>" rel="prettyPhoto[pp_gal]" title="<?php the_title();?>">
                                                     <img src="<?php echo $image3['sizes']['thumbnail']; ?>" alt="<?php echo $image3['alt']; ?>">
                                                 </a>
                                             </li>
@@ -89,7 +89,7 @@ get_header();
                                         if ($image4):
                                             ?>
                                             <li>
-                                                <a href="<?php echo $image4['url']; ?>" rel="prettyPhoto[pp_gal]">
+                                                <a href="<?php echo $image4['url']; ?>" rel="prettyPhoto[pp_gal]" title="<?php the_title();?>">
                                                     <img src="<?php echo $image4['sizes']['thumbnail']; ?>" alt="<?php echo $image4['alt']; ?>">
                                                 </a>
                                             </li>
@@ -115,8 +115,8 @@ get_header();
                         <?php echo $features; ?>
                     </div>
                     <div id="product-buttons">                              
-    <?php if ($brochure_download): ?><a class="pdf-download" target="_blank" href="<?php echo $brochure_download; ?>"><i class="icon-down-circled"></i>Download <span>Brochure</span></a><?php endif; ?>
-                    <?php if ($spec_download): ?><a class="pdf-download" target="_blank" href="<?php echo $spec_download; ?>"><i class="icon-down-circled"></i>Download <span>Technical Spec</span></a><?php endif; ?>
+    <?php if ($brochure_download): ?><a class="pdf-download" target="_blank" href="<?php echo $brochure_download; ?>" title="<?php the_title();?> Brochure"><i class="icon-down-circled"></i>Download <span>Brochure</span></a><?php endif; ?>
+                    <?php if ($spec_download): ?><a class="pdf-download" target="_blank" href="<?php echo $spec_download; ?>" title="<?php the_title();?> Specification Download"><i class="icon-down-circled"></i>Download <span>Technical Spec</span></a><?php endif; ?>
                     </div>
                     <!--                    <div class="options">
                                             <h3>Options:</h3>
